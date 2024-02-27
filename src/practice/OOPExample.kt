@@ -112,6 +112,24 @@ fun main() {
     AMDProcessor().initProcessor()
 }
 
+//package util
+
+object  IOUtils{
+    fun getInputInteger():Int?{
+        return try {
+            readln().toInt()
+        }catch (e:Exception){
+            null
+        }
+    }
+}
+private  fun getSelection(){
+    val input = IOUtils.getInputInteger()
+}
+//new package datasource
+interface ComputerDataSource{
+    fun getComputerInit()
+}
 
 
 
